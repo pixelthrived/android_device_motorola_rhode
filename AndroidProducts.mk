@@ -4,4 +4,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_rhode.mk
+    $(LOCAL_DIR)/aosp_rhode.mk
