@@ -9,6 +9,9 @@ $(call inherit-product, device/motorola/sm6225-common/common.mk)
 # A/B
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch_with_vendor_ramdisk.mk)
 
+# Build signing
+-include vendor/lineage-priv/keys/keys.mk
+
 AB_OTA_PARTITIONS += \
     vbmeta_system \
     vendor_boot
