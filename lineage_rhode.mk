@@ -13,6 +13,15 @@ $(call inherit-product, device/motorola/rhode/device.mk)
 # Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# EverestOS specific flags
+EVEREST_MAINTAINER := "PixelThrived"
+TARGET_SUPPORTS_BLUR := false
+TARGET_HAS_UDFPS := false
+EXTRA_UDFPS_ANIMATIONS := false
+WITH_GAPPS := true
+TARGET_PREBUILT_LAWNCHAIR_LAUNCHER := true
+TARGET_DEFAULT_PIXEL_LAUNCHER := true
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := lineage_rhode
 PRODUCT_DEVICE := rhode
